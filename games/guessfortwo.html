@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+	var answer = parseInt(Math.random() * 100);
+	var player = 1;
+	
+	while(true){
+
+		var number = prompt("Игрок №"+player+", попробуйте отгадать число от 1 до 100. Для выхода введите 0");
+
+		if (number == "0")
+			break;
+
+		if(number == answer){
+			alert("Игрок №"+player+", Вы угадали!");
+			break;
+		} else if (number < answer){
+			alert("Ваше число слишком маленькое");
+		} else if (number > answer){
+			alert("Ваше число слишком большое");
+		}
+		
+		if (player == 1){
+			player = 2;
+		} else {
+			player = 1;
+		}
+
+	}
+
+	alert("Игра окончена");
+
+</script>

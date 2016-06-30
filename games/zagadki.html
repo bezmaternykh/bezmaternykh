@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<script>
+
+	var right = "Вы дали правильный ответ, так держать!" 
+	var wrong = "Вы не угадали :("
+	var score = 0
+
+	var a = prompt("Что зимой и летом одним цветом?");
+
+	if (a == "ёлка"|a == "елка"|a == "ель"|a == "Ёлка"|a == "Елка"|a == "Ель")
+		{alert(right);
+		var score = score + 1}
+	else 
+		{alert(wrong)};
+
+	var b = prompt("Если у прямоугольного стола спилить один угол, сколько углов останется?");
+
+	if (b == "5"|b == "пять"|b == "Пять")
+		{alert(right);
+		var score = score + 1}
+	else 
+		{alert(wrong)};
+
+	var c = prompt("О чем идет речь: лает, а в дом не пускает?");
+
+	if (c == "замок"|c == "Замок")
+		{alert(right);
+		var score = score + 1}
+	else 
+		{alert(wrong)};
+	
+    var d = prompt("Бел, а не сахар, нет ног, а идет.");
+
+	if (d == "снег"|d == "Снег")
+		{alert(right);
+		var score = score + 1}
+	else 
+		{alert(wrong)};
+
+	alert("Ваш результат: "+score+"/4.")
+	alert("Игра окончена.")
+
+	</script>
